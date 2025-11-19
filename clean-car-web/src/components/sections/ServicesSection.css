@@ -1,0 +1,230 @@
+.services-section {
+  padding: 6rem 0;
+  background: white;
+  position: relative;
+}
+
+/* Badge y títulos */
+.badge-services {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #dbeafe;
+  color: #1e40af;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Filtros de Vehículos */
+.vehicle-filters {
+  margin-bottom: 3rem;
+}
+
+.vehicle-filter-btn {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.vehicle-filter-btn:hover {
+  border-color: #2563eb;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+}
+
+.vehicle-filter-btn.active {
+  background: linear-gradient(135deg, #2563eb, #4338ca);
+  border-color: #2563eb;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+}
+
+.vehicle-filter-btn.active .vehicle-icon,
+.vehicle-filter-btn.active .vehicle-name {
+  color: white;
+}
+
+.vehicle-icon {
+  font-size: 2rem;
+  color: #2563eb;
+  transition: color 0.3s ease;
+}
+
+.vehicle-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #111827;
+  transition: color 0.3s ease;
+}
+
+/* Cards de Servicios */
+.service-card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid transparent;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.2);
+  border-color: #2563eb;
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #2563eb, #4338ca);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.service-icon i {
+  font-size: 1.75rem;
+  color: white;
+}
+
+.service-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.service-description {
+  font-size: 1rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.service-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-top: 2px solid #e5e7eb;
+  border-bottom: 2px solid #e5e7eb;
+  margin-bottom: 1.5rem;
+}
+
+.price-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.price-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.btn-contact-service {
+  width: 100%;
+  padding: 0.875rem;
+  background: linear-gradient(135deg, #10b981, #059669);
+  border: none;
+  border-radius: 0.75rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-contact-service:hover {
+  background: linear-gradient(135deg, #059669, #047857);
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+}
+
+/* CTA Final */
+.services-cta {
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  padding: 3rem;
+  border-radius: 1.5rem;
+  margin-top: 4rem;
+}
+
+.services-cta h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.services-cta p {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+/* Loading y Error */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services-section {
+    padding: 4rem 0;
+  }
+
+  .vehicle-filter-btn {
+    padding: 1rem 0.5rem;
+  }
+
+  .vehicle-icon {
+    font-size: 1.5rem;
+  }
+
+  .vehicle-name {
+    font-size: 0.75rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .service-title {
+    font-size: 1.25rem;
+  }
+
+  .price-value {
+    font-size: 1.5rem;
+  }
+
+  .services-cta {
+    padding: 2rem;
+  }
+
+  .services-cta h3 {
+    font-size: 1.5rem;
+  }
+}
